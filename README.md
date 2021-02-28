@@ -8,6 +8,7 @@ iOS 14 在 设置 -> 日历 -> 账户...
 Github 订阅源 https://raw.githubusercontent.com/ChengLuffy/lpl.ics/master/LPL2021.ics
 
 ~~Gitee 订阅源 https://gitee.com/chengluffy/lpl2020/raw/master/LPL2021.ics~~
+
 Gitee 莫名其妙显示 **根据相关法律政策,该内容无法显示**，所以已取消。
 
 同步更新，请根据自己的网络环境自行选择。
