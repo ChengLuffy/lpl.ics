@@ -17,6 +17,8 @@ Gitee 莫名其妙显示 **根据相关法律政策,该内容无法显示**，�
 
 可以用作一个简单的数据查询使用。
 
+一个可以分战队订阅日历的仓库：[TankNee/LOL_Game_Subscription](https://github.com/TankNee/LOL_Game_Subscription)
+
 Preview
 ---
 
