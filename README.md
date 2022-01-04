@@ -5,7 +5,7 @@ iPhone 用户可以在 设置 -> 密码和账户 -> 添加账户 -> 其他 -> �
 
 iOS 14 在 设置 -> 日历 -> 账户...
 
-Github 订阅源 https://raw.githubusercontent.com/ChengLuffy/lpl.ics/master/LPL2021.ics
+Github 订阅源 https://raw.githubusercontent.com/ChengLuffy/lpl.ics/master/LPL2022.ics
 
 ~~Gitee 订阅源 https://gitee.com/chengluffy/lpl2020/raw/master/LPL2021.ics~~
 
