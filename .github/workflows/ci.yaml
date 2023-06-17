@@ -3,7 +3,7 @@ name: lpl.ics
 on:
   push:
       branches:
-          - test
+          - master
   schedule:
       - cron: "30 * * * *"
 jobs:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          ref: test
+          ref: master
       - name: Install Python
         uses: actions/setup-python@v4
         with:
