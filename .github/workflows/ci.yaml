@@ -5,7 +5,7 @@ on:
       branches:
           - master
   schedule:
-      - cron: "30 * * * *"
+      - cron: "0,30 * * * *"
 jobs:
   lpl_ics:
     runs-on: ubuntu-latest
