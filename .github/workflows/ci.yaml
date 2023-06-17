@@ -1,0 +1,42 @@
+name: lpl.ics
+
+on:
+  push:
+      branches:
+          - test
+  schedule:
+      - cron: "30 * * * *"
+jobs:
+  lpl_ics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: test
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11.4'
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+        shell: bash
+      - name: "Working"
+        timeout-minutes: 350
+        run: python3 main.py
+        env:
+          URL: ${{ vars.URL }}
+          YEAR: ${{ vars.YEAR }}
+      - name: Commit And Push
+        run: |
+          if [ -z "$(git status --porcelain)" ]
+          then
+              echo "nothing to update."
+          else
+              git config --local user.email "action@github.com"
+              git config --local user.name "GitHub Action"
+              git add -A
+              export date=`date -R`
+              git commit -m "update at $date" -a
+              git push
+          fi
