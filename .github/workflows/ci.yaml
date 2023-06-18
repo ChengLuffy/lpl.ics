@@ -23,7 +23,7 @@ jobs:
         shell: bash
       - name: "Working"
         timeout-minutes: 350
-        run: python3 main.py
+        run: python3 main.py >> /dev/null
         env:
           URL: ${{ vars.URL }}
           YEAR: ${{ vars.YEAR }}
